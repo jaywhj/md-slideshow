@@ -10,7 +10,7 @@
 
 ### MD-slideshow
 
-This project demonstrates how to generate beautiful slideshows using [MkSlides](https://github.com/MartenBE/mkslides) and [reveal-md](https://github.com/webpro/reveal-md). you need to install them first.
+This project demonstrates how to generate beautiful slideshows using [MkSlides](https://github.com/MartenBE/mkslides) or [reveal-md](https://github.com/webpro/reveal-md). you need to install them first.
 
 Download this project, open a terminal, switch to this project's directory use `cd`, and then follow the README prompts for the `MkSlides` and `reveal-md` to run it.
 
