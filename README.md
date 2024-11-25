@@ -4,9 +4,10 @@
 
 ![img](docs/assets/slideshow.gif)
 
+<br />
 
 
-### md-slideshow
+### MD-slideshow
 
 This project demonstrates how to generate beautiful slideshows using `MkSlides` and `reveal-md`. you need to install them first.
 
