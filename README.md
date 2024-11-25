@@ -36,19 +36,19 @@ reveal-md --preprocessor preproc.js docs/demo-preprocessing.md --static _site
 .
 ├── _site				# reveal-md static site generated after a build, it is regenerated every time it is built.
 ├── site				# MkSlides static site generated after a build, it is regenerated every time it is built.
-├── docs						# markdown document directory
+├── docs				# markdown document directory
 │   ├── demo-mkslides.md
 │   └── demo-preprocessing.md
-├── plugin							# plugin directory
+├── plugin			# plugin directory
 │   ├── reveal.js-menu
 │   │   └──menu.js
 │   ├── other-plugin
 │   │   └──other-plugin.js
-│   └── plugin.js						# for reveal-md
-├── reveal-md.json					# for reveal-md
-├── reveal.json							# for reveal-md
+│   └── plugin.js		# for reveal-md
+├── reveal-md.json	# for reveal-md
+├── reveal.json			# for reveal-md
 ├── preproc.js
-└── mkslides.yml						# for MkSlides
+└── mkslides.yml		# for MkSlides
 ```
 
 
