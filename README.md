@@ -4,7 +4,7 @@ Download this project, open a terminal, switch to this project's directory use `
 
 
 
-#### Use MkSlides
+### Use MkSlides
 
 ```python
 mkslides build docs/demo-mkslides.md
@@ -12,7 +12,7 @@ mkslides build docs/demo-mkslides.md
 
 
 
-#### Use reveal-md
+### Use reveal-md
 
 ```bash
 reveal-md docs/demo-mkslides.md --static _site
@@ -20,7 +20,7 @@ reveal-md docs/demo-mkslides.md --static _site
 
 
 
-#### Use of pre-processing
+#### preprocessing
 
 Compare the difference between `demo-preprocessing.md` and `demo-mkslides.md`.
 
@@ -30,7 +30,7 @@ reveal-md --preprocessor preproc.js docs/demo-preprocessing.md --static _site
 
 
 
-#### Directory tree
+### Directory tree
 
 ```bash
 .
@@ -53,7 +53,7 @@ reveal-md --preprocessor preproc.js docs/demo-preprocessing.md --static _site
 
 
 
-#### Notes
+### Notes
 
 1. A total of 5 plugins are demonstrated: `mermaid, plantuml, chart, menu, toolbar`, It's all been tested. It all works.
 2. Some plugins have not been updated and maintained for a long time, so there will be some bugs, such as `toolbar`, but does not affect normal use!
@@ -61,7 +61,7 @@ reveal-md --preprocessor preproc.js docs/demo-preprocessing.md --static _site
 
 
 
-#### Preview image
+### Preview image
 
 ![img](docs/assets/slideshow.gif)
 
