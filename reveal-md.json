@@ -1,0 +1,14 @@
+{
+    "separator": "^\s*<!--h-->\s*$",
+    "verticalSeparator": "^\s*<!--v-->\s*$",
+    "theme": "league",
+
+    "scripts": [
+       "plugin/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.js",
+        "plugin/revealjs-plantuml/dist/plantuml.js",
+        "plugin/reveal.js-menu/menu.js",
+        "plugin/chart/chart.min.js",
+        "plugin/chart/plugin.js",
+        "plugin/plugin.js"
+    ]
+}

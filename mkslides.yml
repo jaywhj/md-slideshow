@@ -1,0 +1,74 @@
+index:
+  title: Aaron's Slides
+
+slides:
+  theme: sky
+  highlight_theme: monokai-sublime
+  separator: ^\s*<!--h-->\s*$
+  separator_vertical: ^\s*<!--v-->\s*$
+  separator_notes: "^Notes?:"
+  separator_charset: utf-8
+
+revealjs:
+  width: 1280
+  height: 800
+  transition: slide
+  navigationMode: linear    # default、linear、grid
+  slideNumber: c/t          # true、false、h.v、h/v、c、c/t
+  showSlideNumber: speaker  # all、print、speaker
+
+  # Setting up tags to ignore for katex typesetting math formulas
+  katex:
+    ignoredTags:
+      - script
+      - noscript
+      - style
+      - textarea
+      - pre
+      - code
+
+  # Configuring of the mermaid
+  mermaid:          # https://mermaid.nodejs.cn/config/theming.html
+    theme: forest   # default forest base dark neutral
+    themeVariables:
+      primaryColor: '#43464A'
+      primaryTextColor: '#E3DB82'
+      lineColor: '#F2AA3B'
+
+  # Configuring of the menu
+  menu:
+    titleSelector: 'h1, h2, h3'
+    hideMissingTitles: true
+    openButton: true
+    openSlideNumber: true
+#    side: right
+#    numbers: true
+
+  # Configuring of the toolbar
+  toolbar:
+    position: bottom
+    overview: true     # https://github.com/denehyg/reveal.js-toolbar/issues/8#issuecomment-546949621
+    pause: true
+    notes: false       # There are bugs.
+    help: true
+    captureMenu: true  # https://github.com/denehyg/reveal.js-toolbar/issues/14#issuecomment-1219963857
+    fullscreen: true
+    capturePlaybackControl: false
+    loadIcons: true
+
+  # The plugin of toolbar
+  dependencies:
+    - src: ../plugin/reveal.js-toolbar/toolbar.js
+
+plugins:
+  - name: RevealMermaid
+    extra_javascript:
+      - ../plugin/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.js
+  - name: RevealMenu
+    extra_javascript:
+      - ../plugin/reveal.js-menu/menu.js
+  - name: RevealPlantUML
+    extra_javascript:
+      - ../plugin/revealjs-plantuml/dist/plantuml.js
+
+

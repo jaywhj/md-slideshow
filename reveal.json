@@ -1,0 +1,66 @@
+{
+    "width": 1280,
+    "height": 800,
+    "transition": "slide",
+    "navigationMode": "linear",
+    "slideNumber": "c/t",
+    "showSlideNumber": "speaker",
+    "highlight_theme": "monokai-sublime",
+    "separator_notes": "^Notes?:",
+    
+    "katex": {
+        "ignoredTags": ["script", "noscript", "style", "textarea", "pre", "code"]
+    },
+    
+    "menu": {
+        "titleSelector": "h1, h2, h3",
+        "hideMissingTitles": true,
+        "openButton": true,
+        "openSlideNumber": true,
+    },
+
+    "mermaid": {
+        "theme": "forest",
+        "themeVariables": {
+            "primaryColor": "#43464A",
+            "primaryTextColor": "#E3DB82",
+            "lineColor": "#F2AA3B"
+        }
+    },
+
+
+    "dependencies": [
+        {"src": "../plugin/reveal.js-toolbar/toolbar.js"}
+    ],
+
+    "toolbar": {
+        "position": "bottom",
+        "overview": true,
+        "pause": true,
+        "notes": false,
+        "help": true,
+        "captureMenu": true,
+        "fullscreen": true,
+        "capturePlaybackControl": false,
+        "loadIcons": true,
+    },
+
+    
+    "chart": {
+        "defaults": {
+            "maintainAspectRatio": false,
+            "responsive": true,
+            "font": { "size": 30 },
+            "color": "lightgray",
+            "scale": {
+                "beginAtZero": true,
+                "ticks": { "stepSize": 1 },
+                "grid": { "color": "lightgray" }
+            }
+        },
+        "line": { "borderColor": [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] },
+        "bar": { "backgroundColor": [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
+        "pie": { "backgroundColor": [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]}
+    }
+
+}
