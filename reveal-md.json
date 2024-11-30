@@ -9,6 +9,6 @@
         "plugin/reveal.js-menu/menu.js",
         "plugin/chart/chart.min.js",
         "plugin/chart/plugin.js",
-        "plugin/plugin.js"
+        "plugin.js"
     ]
 }

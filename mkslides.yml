@@ -7,7 +7,8 @@ slides:
   separator: ^\s*<!--h-->\s*$
   separator_vertical: ^\s*<!--v-->\s*$
   separator_notes: "^Notes?:"
-  separator_charset: utf-8
+  charset: utf-8
+  preprocess_script: preproc.py    # Auto-generate slides based on headings, no more need to manually add separators.
 
 revealjs:
   width: 1280
@@ -16,6 +17,7 @@ revealjs:
   navigationMode: linear    # default、linear、grid
   slideNumber: c/t          # true、false、h.v、h/v、c、c/t
   showSlideNumber: speaker  # all、print、speaker
+  pdfSeparateFragments: false
 
   # Setting up tags to ignore for katex typesetting math formulas
   katex:

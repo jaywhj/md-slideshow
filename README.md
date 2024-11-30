@@ -21,25 +21,32 @@ Thanks to both of them for their open source contributions.
 ### Use MkSlides
 
 ```python
-mkslides build docs/demo-mkslides.md
-```
-
-
-
-### Use reveal-md
-
-```bash
-reveal-md docs/demo-mkslides.md --static _site
+mkslides build docs/demo.md
+mkslides build docs/
 ```
 
 
 
 #### preprocessing
 
-Compare the difference between `demo-preprocessing.md` and `demo-mkslides.md`.
+Just turn on the switch of  `preproc.py` in `mkslides.yml`.
+
+
+
+### Use reveal-md
 
 ```bash
-reveal-md --preprocessor preproc.js docs/demo-preprocessing.md --static _site
+reveal-md docs/demo.md --static _site
+```
+
+
+
+#### preprocessing
+
+You need to add the path of `preproc.js` to the build command.
+
+```bash
+reveal-md --preprocessor preproc.js docs/demo.md --static _site
 ```
 
 
@@ -48,21 +55,21 @@ reveal-md --preprocessor preproc.js docs/demo-preprocessing.md --static _site
 
 ```bash
 .
-├── _site    # reveal-md static site generated after a build, it is regenerated every time it is built.
-├── site     # MkSlides static site generated after a build, it is regenerated every time it is built.
-├── docs                   # markdown document directory
-│   ├── demo-mkslides.md
-│   └── demo-preprocessing.md
+├── _site          # reveal-md static site generated after a build
+├── site           # MkSlides static site generated after a build
+├── docs                   # markdown document
+│   └── demo.md
 ├── plugin                 # plugin directory
 │   ├── reveal.js-menu
 │   │   └──menu.js
-│   ├── other-plugin
-│   │   └──other-plugin.js
-│   └── plugin.js          # for reveal-md
-├── reveal-md.json         # for reveal-md
-├── reveal.json            # for reveal-md
-├── preproc.js
-└── mkslides.yml           # for MkSlides
+│   └── other-plugin
+│       └──other-plugin.js
+├── plugin.js            # for reveal-md
+├── preproc.js           # for reveal-md
+├── reveal-md.json       # for reveal-md
+├── reveal.json          # for reveal-md
+├── preproc.py     # for MkSlides
+└── mkslides.yml   # for MkSlides
 ```
 
 
